@@ -1,0 +1,27 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 0 20px;
+    width: 100%;
+    height: 200px;
+    
+    img {
+        border-radius: 25px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #Banner_shadow {
+        position: absolute;
+    }
+
+    p {
+        position: absolute;
+        font-size: 48px;
+        color: white;
+        
+    }
+}

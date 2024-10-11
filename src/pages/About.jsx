@@ -2,7 +2,7 @@ function About() {
     return (
       <div className="About">
         <header className="About-header">
-          <p>Hello World - About</p>
+          <p>Page - About</p>
         </header>
       </div>
     );

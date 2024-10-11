@@ -1,8 +1,10 @@
+import Card from "../components/Card.jsx"
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello World</p>
+      <Card />
       </header>
     </div>
   );

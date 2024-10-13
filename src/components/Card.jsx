@@ -1,5 +1,6 @@
 import {React, useState, useEffect}  from "react";
 import logements from "../Datas/logements.json";
+import '../styles/card.scss'
 
 function Card() {
     const [items, setItems] = useState([]);
@@ -8,26 +9,14 @@ function Card() {
     setItems(logements);
     }, []);
 
-    const deleteItem = (id) => {
-    const newItems = items.filter((item) => item.id !== id);
-    setItems(newItems);
-    };
-
-    const addItem = () => {
-    const newItem = { id: items.length + 1, name: `Item ${items.length + 1}` };
-    setItems([...items, newItem]);
-    };
-
     return (
-    <div>
+    <div className="card-container">
         {items.map((item) => (
-        <div key={item.id}>
-            <div><img src={item.cover} alt="cover"/></div>
-            <h2>{item.title}</h2>
-            <button onClick={() => deleteItem(item.id)}>Delete</button>
-        </div>
+            <div className="card-item" key={item.id}>
+                <img className="card_cover" src={item.cover} alt="cover"/>
+                <h2 className="card_title">{item.title}</h2>
+            </div>
         ))}
-        <button onClick={addItem}>Add Item</button>
     </div>
     );
 }

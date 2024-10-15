@@ -7,7 +7,7 @@ function About() {
     return (
     <div className="about">
       <main>
-        <div className="collapse">
+        <div className="collapsibles">
           <div className="collapse__dropdown">
             {CollapseData.map((item) => {
               return (

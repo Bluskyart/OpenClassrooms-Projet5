@@ -1,0 +1,34 @@
+.slide {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.slide_image {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.slider_number {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    color: white;
+}
+
+.left-Arrow,
+.right-Arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.left-Arrow {
+    left: 10px;
+}
+
+.right-Arrow {
+    right: 10px;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ChevronLeft from '../assets/chevron-left.svg';
 import ChevronRight from '../assets/chevron-right.svg';
+import '../styles/slideshow.scss';
 
 function Slideshow({ slides }) {
     /* Crée un Hook d'état */
@@ -33,15 +34,12 @@ function Slideshow({ slides }) {
         )}
         {slides.map((image, index) => {
           return (
-            <div
-              key={index}
-              className={index === current ? "slider active" : "slider"}
-            >
+            <div key={index} className={index === current ? "slider active" : "slider"}>
               {index === current && (
-                <img src={image} alt="img-appartement" className="slide__image" />
+                <img className="slide_image" src={image} alt="img-appartement" />
               )}
               {index === current && length > 1 && (
-                <span className="slider__number">
+                <span className="slider_number">
                   {current + 1}/{length}
                 </span>
               )}

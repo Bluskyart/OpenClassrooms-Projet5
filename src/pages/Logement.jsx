@@ -11,6 +11,7 @@ function Logement() {
     const { id } = useParams();
     const ficheLogement = Data.find((logement) => logement.id === id);
     const logement = Data.find((item) => item.id === id);
+    const arrayStars = [1, 2, 3, 4, 5]
 
     return (
         <>
@@ -18,25 +19,37 @@ function Logement() {
             <div className="logement">
                 <main>
                     <div>
-                        <Slideshow slides={logement.pictures} />
-                        <div className="collapse__dropdown">
+                        <div>
                             <div key={logement.id}>
-                                <div className="logement_infos">
-                                    <h2 className="logement_title">{logement.title}</h2>
-                                    <h2 className="logement_location">{logement.location}</h2>
+                                <Slideshow slides={logement.pictures} />
+                                <div className="logement_and_host">
+                                    <div className="logement_infos">
+                                        <h2 className="logement_title">{logement.title}</h2>
+                                        <h2 className="logement_location">{logement.location}</h2>
+                                    </div>
+                                    <div className="host_identity">
+                                        <img className="host_picture" src={logement.host.picture} alt="portrait"/>
+                                        <h2 className="host_name">{logement.host.name}</h2>
+                                    </div>
                                 </div>
-                                <div className="host_identity">
-                                    <img className="host_picture" src={logement.host.picture} alt="portrait"/>
-                                    <h2 className="host_name">{logement.host.name}</h2>
+                                <div className="logement_tags_and_stars">
+                                    <h2 className="logement_all_tags">{logement.tags.map((element, index) => {
+                                    return(<p className='logement_tags' key={"tags-"+index}>{element}</p>)})}
+                                    </h2>
+                                    <div className='stars'>
+                                    {
+                                        arrayStars.map(element => {
+                                            const nbreEtoiles = parseInt(logement.rating)
+                                            return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'star_lighted' : 'star_dimmed'}>★</span>)
+                                        })
+                                    }
+                                    </div>
                                 </div>
-                                
-                                <h2 className="logement_all_tags">{logement.tags.map((element, index) => {
-                                return(<p className='logement_tags' key={"tags-"+index}>{element}</p>)
-                            })}</h2>
                                 <div className="collapsibles">
                                     <Collapse content={logement.description} title="Description" />
                                     <Collapse content={logement.equipments} title="Equipements" />
                                 </div>
+                                
                             </div>
                         </div>
                     </div>

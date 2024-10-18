@@ -1,0 +1,40 @@
+.logement_title {
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.logement_location {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.logement_tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.host_name {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.host_picture {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.host_identity {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}

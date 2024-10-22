@@ -20,7 +20,7 @@ function Logement() {
                 <main>
                     <div>
                         <div>
-                            <div key={logement.id}>
+                            <div className="logement_all" key={logement.id}>
                                 <Slideshow slides={logement.pictures} />
                                 <div className="logement_and_host">
                                     <div className="logement_infos">
@@ -49,7 +49,6 @@ function Logement() {
                                     <Collapse content={logement.description} title="Description" />
                                     <Collapse content={logement.equipments} title="Equipements" />
                                 </div>
-                                
                             </div>
                         </div>
                     </div>

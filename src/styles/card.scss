@@ -9,6 +9,7 @@
     margin: 3rem 0 3rem 0;
     justify-content: center;
     gap: 4.5rem;
+    max-width: 1240px;
 }
 
 .card-item {
@@ -26,8 +27,9 @@
 
     .card_title {
         position: absolute;
-        bottom: 0.5rem;
-        left: 0.5rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
         color: white;
         font-size: 18px;
         font-weight: 700;
@@ -36,6 +38,12 @@
         border-radius: 5px;
         max-width: calc(100% - 20px);
         margin: 0.5rem;
+        text-decoration: none !important;
+        color: white;
     }
 }
 
+.App-header {
+    display: flex;
+    justify-content: center;
+}

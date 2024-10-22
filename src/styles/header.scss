@@ -1,14 +1,17 @@
-#header {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 3% 0% 1% 0%;
+    margin: 3% auto 1% auto;
+    width: 1240px;
+    max-width: 100%;
 }
 
-#nav {
+.nav {
     display: flex;
     gap: 26px;
+    margin-right: 5%;
 
     a {
         text-decoration: none;
@@ -19,4 +22,5 @@
 
 .logo_header {
     height: 68px;
+    margin-left: 5%;
 }

@@ -1,10 +1,19 @@
+.logement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logement_all {
+    display: flex;
+    flex-direction: column;
+    width: 1240px;
+}
+
 h2 {
     margin: 0;
     padding: 0;
-}
-
-.logement {
-    margin: 0% 5% 2% 5%;
 }
 
 .logement_title {
@@ -108,3 +117,4 @@ h2 {
         white-space: pre-wrap;
     }
 }
+

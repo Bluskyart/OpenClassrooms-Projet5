@@ -10,11 +10,12 @@
     img {
         border-radius: 25px;
         height: 100%;
-        width: 100%;
+        width: 1240px;
         object-fit: cover;
+        
     }
 
-    #Banner_shadow {
+    .Banner_shadow {
         position: absolute;
     }
 
@@ -25,5 +26,14 @@
         border: 1px;
         border-color: black;
         
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+        img {
+            margin: 5%;
+        }
     }
 }

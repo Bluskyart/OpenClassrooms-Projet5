@@ -1,4 +1,5 @@
-import Card from "../components/Card.jsx"
+import Card from "../components/Card.jsx";
+import '../styles/card.scss';
 
 function App() {
   return (

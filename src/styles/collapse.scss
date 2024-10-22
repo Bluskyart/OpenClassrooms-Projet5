@@ -3,19 +3,48 @@
     flex-direction: column;
     width: 80%;
     
+    .hidden {
+        display: none;
+    }
+
+    .chevronValue {
+
+        img {
+        width: 25px;
+        height: 15px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        }
+    
+        .rotate {
+            transform: rotate(180deg);
+        }
+    
+    }
 }
 
-.collapsibles {
-    justify-content: center;
+
+.visible_collapse {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    background-color: #FBFBFB;
+    border-radius: 5px;
+
+    ul {
+        padding: 0px 27px 19px 18px;
+        margin-left: 0;
+        text-align: start;
+        list-style-type: none;
+    }
+
+    p {
+        padding: 0px 27px 19px 18px;
+        margin-left: 0;
+        text-align: start;
+    }
 }
 
-
-.visible.collapse ul {
-    padding: 36px 27px 19px 18px;
-    margin: 0;
-    text-align: start;
-    list-style-type: none;
-}
 
 .collapse__header {
     display: flex;
@@ -29,46 +58,8 @@
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
     align-items: center;
-    
-}
 
-.collapse__header span {
-    padding-right: auto;
-}
-
-.visible {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-.chevronValue img {
-    width: 25px;
-    height: 15px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.rotate {
-    transform: rotate(180deg);
-}
-
-.visible.collapse {
-    position: relative;
-    top: -10px;
-    font-size: 18px;
-    color: black;
-    background-color: #FBFBFB;
-    margin: 0;
-    z-index: -1;
-}
-
-.equipement-content {
-    margin: 0;
-}
-
-.about {
-    margin-bottom: 3rem;
+    span {
+        padding-right: auto;
+    }
 }

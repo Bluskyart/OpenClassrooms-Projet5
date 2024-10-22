@@ -10,8 +10,8 @@ function Banner() {
     if (location.pathname === "/")
         return (
             <div className='banner'>
-                <img id='Banner_home' src={Image_source_1} alt='banner_Home' loading="eager"/>
-                <img id='Banner_shadow' src={Banner_shadow} alt='Banner_shadow'/>
+                <img className='Banner_home' src={Image_source_1} alt='banner_Home' loading="eager"/>
+                <img className='Banner_shadow' src={Banner_shadow} alt='Banner_shadow'/>
                 <p>Chez vous, partout et ailleurs</p>
             </div>
         )

@@ -20,8 +20,18 @@ function Collapse({title, content}) {
                     <img className={chevronRotation} src={chevronDown} alt="chevron"/>
                 </div>
             </div>
-            <div className={contentVisible ? "visible collapse" : "hidden collapse"}>
-                <ul>{content}</ul>
+            <div className={contentVisible ? "visible_collapse" : "hidden collapse"}>
+                {
+                    typeof content === 'string' ? (
+                        <p>{content}</p>
+                    ) : Array.isArray(content) ? (
+                        <ul>
+                            {content.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
+                    ) : null
+                }
             </div>
         </div>
     )

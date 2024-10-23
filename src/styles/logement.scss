@@ -1,14 +1,8 @@
-.logement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
 .logement_all {
     display: flex;
     flex-direction: column;
-    width: 1240px;
+    width: 100%;
+    margin: auto;
 }
 
 h2 {
@@ -20,17 +14,20 @@ h2 {
     color: #FF6060;
     font-size: 36px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .logement_location {
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .logement_infos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .logement_tags {
@@ -38,17 +35,26 @@ h2 {
     color: white;
     font-size: 14px;
     font-weight: 700;
-    border-radius: 10px;
+    border-radius: 15px;
     align-items: baseline;
     text-align: center;
     padding: 2px 10px 5px 10px;
     margin-right: 10px;
+    width: 115px;
+    height: 25px;
 }
 
 .logement_all_tags {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+}
+
+.logement_content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .host_name {
@@ -74,14 +80,15 @@ h2 {
 
 .logement_and_host {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: end;
     justify-content: space-between;
 }
 
 .stars {
     display: flex;
-    font-size: 30px;
-    width: 130px;
+    font-size: 25px;
+    width: 110px;
     gap: 10px;
     margin-right: 40px;
 }
@@ -106,8 +113,8 @@ h2 {
 
 .collapsibles {
     display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 5%;
+    margin-bottom: 40px;
 }
 
 .visible.collapse {
@@ -118,3 +125,59 @@ h2 {
     }
 }
 
+@media (max-width: 768px) {
+    .logement_content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logement_tags_and_stars {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+
+        .logement_title {
+            font-size: 18px;
+        }
+
+        .logement_location {
+            font-size: 14px;
+        }
+    }
+
+    .logement_and_host {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+        width: 100%;
+        
+            .host_name {
+                font-size: 12px;
+            }
+
+            .host_picture {
+                height: 32px;
+                width: 32px;
+            }
+    }
+
+    .stars {
+        font-size: 13px;
+    }
+
+    .slide_image {
+        height: 225px;
+    }
+
+    .slider_number {
+        display: none;
+    }
+
+    .collapsibles {
+        display: flex;
+        flex-direction: column;
+    }
+}

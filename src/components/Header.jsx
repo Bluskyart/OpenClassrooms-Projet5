@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import Kasa_logo_red_big from '../assets/Kasa_logo_red_big.svg';
+import Kasa_logo_red from '../assets/Kasa_logo_red.svg';
 import '../styles/header.scss';
 
 function Header() {
@@ -9,7 +9,7 @@ function Header() {
     if (location.pathname === "/") {
         return (
             <header className='header'>
-                <img className='logo_header' src={Kasa_logo_red_big} alt='Logo Kasa'/>
+                <img className='logo_header' src={Kasa_logo_red} alt='Logo Kasa'/>
                 <nav className='nav'>
                     <Link to="/"><u>Accueil</u></Link>
                     <Link to="/about">A Propos</Link>
@@ -20,7 +20,7 @@ function Header() {
     else if (location.pathname === "/about") {
         return (
                 <header className='header'>
-                    <img className='logo_header' src={Kasa_logo_red_big} alt='Logo Kasa'/>
+                    <img className='logo_header' src={Kasa_logo_red} alt='Logo Kasa'/>
                     <nav className='nav'>
                         <Link to="/">Accueil</Link>
                         <Link to="/about"><u>A Propos</u></Link>
@@ -31,7 +31,7 @@ function Header() {
     else {
         return (
             <header className='header'>
-                <img className='logo_header' src={Kasa_logo_red_big} alt='Logo Kasa'/>
+                <img className='logo_header' src={Kasa_logo_red} alt='Logo Kasa'/>
                 <nav className='nav'>
                     <Link to="/">Accueil</Link>
                     <Link to="/about">A Propos</Link>

@@ -1,9 +1,12 @@
+main {}
+
 .collapse__dropdown {
     display: flex;
     flex-direction: column;
-    width: auto;
-    margin: auto;
     align-items: center;
+    max-width: 1240px;
+    margin-left: -5%;
+    margin-right: -5%;
 }
 
 .about {
@@ -12,6 +15,12 @@
 }
 
 @media (max-width: 768px) {
+.collapse__dropdown {
+    margin-left: -5%;
+    margin-right: -5%;
+}
 
-    
+    .collapse {
+        width: 100%;
+    }
 }

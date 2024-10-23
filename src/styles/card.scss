@@ -8,7 +8,7 @@
     padding-bottom: 45px;
     margin: 3rem 0 3rem 0;
     justify-content: center;
-    gap: 4.5rem;
+    gap: 3rem;
     max-width: 1240px;
 }
 
@@ -46,4 +46,19 @@
 .App-header {
     display: flex;
     justify-content: center;
+}
+
+@media(max-width: 375px) {
+    .card-container {
+        background-color: transparent;
+        padding-top: 0;
+        gap: 1.5rem;
+        width: 335px;
+        height: auto;
+    }
+    .card-item {
+        display: flex;
+        width: 100%;
+        height: 225px;
+    }
 }

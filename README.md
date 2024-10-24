@@ -5,7 +5,7 @@ Dans cette mise en situation, je prends le rôle d'un développeur front-end en 
 
 Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
 
-<div align="center">https://github.com/user-attachments/assets/1214c82f-81b9-48d2-84e9-8bd57e1ff6ff</div>
+<div align="center">![1680512368252_Kasa logo](https://github.com/user-attachments/assets/32005a39-9b31-49a4-88a6-7c7985e76ea2)</div>
 
 Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance.
 

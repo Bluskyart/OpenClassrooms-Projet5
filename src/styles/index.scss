@@ -4,15 +4,15 @@ body {
   font-family: 'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0 5%;
-  max-width: 1240px;
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0 5%;
+      max-width: 1240px;
+    }
 }
 
 code {

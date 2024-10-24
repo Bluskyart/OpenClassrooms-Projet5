@@ -10,7 +10,6 @@ import Error from './pages/Error';
 import Banner from './components/Banner';
 import Logement from './pages/Logement';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(

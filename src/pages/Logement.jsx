@@ -9,13 +9,12 @@ import Slideshow from '../components/Slideshow.jsx';
 
 function Logement() {
     const { id } = useParams();
-    const ficheLogement = Data.find((logement) => logement.id === id);
     const logement = Data.find((item) => item.id === id);
     const arrayStars = [1, 2, 3, 4, 5]
 
     return (
         <>
-        {ficheLogement ? (
+        {logement ? (
             <div className="logement">
                 <main>
                     <div>
@@ -37,7 +36,6 @@ function Logement() {
                                         }
                                         </div>
                                     </div>
-                                    
                                     <div className="logement_tags_and_stars">
                                         <div className="logement_infos">
                                             <h2 className="logement_title">{logement.title}</h2>

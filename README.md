@@ -41,7 +41,8 @@ Un point est prévu avec la CTO plus tard dans la semaine, mais pour que l'on pu
 </tbody>
 </table>
 
-## Quelque heures plus tard
+
+### Quelque heures plus tard
 
 Nous recevons un e-mail de Paul, le designer :
 
@@ -91,11 +92,5 @@ Nous recevons un e-mail de Paul, le designer :
 </tbody>
 </table>
 
-<aside>
-<p><strong>Utilisation de Sass et animations</strong>&nbsp;: les contraintes diffèrent selon votre parcours :</p>
-<ul>
-<li>Si vous êtes étudiant sur le parcours&nbsp;<strong>Développeur Web</strong>, vous devez obligatoirement utiliser Sass pour générer le style CSS du site web, ainsi que mettre en place l'animation CSS du menu déroulant.</li>
-<li>Si vous êtes étudiant sur le parcours&nbsp;<strong>Intégrateur Web</strong>, ceci n'est pas obligatoire puisque vous avez déjà été évalués sur un projet passé. Il est quand même recommandé de le faire afin de pratiquer sur ces compétences clés.</li>
-</ul>
-</aside>
+### Note : L'utilisation de Sass est obligatoire pour générer le style CSS du site web, ainsi que pour mettre en place l'animation CSS du menu déroulant.
 

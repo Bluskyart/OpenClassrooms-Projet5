@@ -11,7 +11,7 @@
 
 .nav {
     display: flex;
-    gap: 26px;
+    gap: 55px;
 
     a {
         text-decoration: none;
@@ -27,6 +27,8 @@
 
 @media(max-width: 767px) {
         .nav {
+            gap: 26px;
+            
             a {
                 text-decoration: none;
                 font-size: 12px;

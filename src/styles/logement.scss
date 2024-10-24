@@ -1,8 +1,14 @@
+.logement {
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
 .logement_all {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
+    
 }
 
 h2 {
@@ -31,16 +37,17 @@ h2 {
 }
 
 .logement_tags {
+    display: flex;
     background-color: #FF6060;
     color: white;
     font-size: 14px;
     font-weight: 700;
     border-radius: 15px;
-    align-items: baseline;
-    text-align: center;
-    padding: 2px 10px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px;
     margin-right: 10px;
-    width: 115px;
+    min-width: 115px;
     height: 25px;
 }
 
@@ -166,10 +173,6 @@ h2 {
 
     .stars {
         font-size: 13px;
-    }
-
-    .slide_image {
-        height: 225px;
     }
 
     .slider_number {

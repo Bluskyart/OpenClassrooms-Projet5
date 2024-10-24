@@ -33,3 +33,10 @@
 .right-Arrow {
     right: 10px;
 }
+
+@media (max-width: 768px) {
+
+    .slide_image {
+        height: 225px;
+    }
+}

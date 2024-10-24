@@ -41,61 +41,61 @@ Un point est prévu avec la CTO plus tard dans la semaine, mais pour que l'on pu
 </tbody>
 </table>
 
-## Le lendemain
+## Quelque heures plus tard
 
-Nina a répondu favorablement à notre demande, et a convenu d’un rendez-vous téléphonique avec nous pour discuter des détails de l’optimisation du site.
-Voici le replay de la discussion que nous avons eue avec Nina :
-
-https://github.com/user-attachments/assets/d2163670-7466-4b14-a6e4-4e03c103591d
-
-Suite à notre discussion, nous avons reçu un mail de Nina : 
+Nous recevons un e-mail de Paul, le designer :
 
 <table>
 <tbody>
 <tr>
 <td>
-<p><strong>Objet :&nbsp;</strong>RE RE Proposition d’optimisation de votre SEO</p>
-<p><strong>De :&nbsp;</strong>Nina Carducci</p>
-<p><strong>À :&nbsp;</strong>Moi</p>
+<p><strong>Objet&nbsp;</strong>: Fonctionnalité et design<br><strong>De&nbsp;</strong>: Paul<br><strong>À</strong>&nbsp;: Moi</p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Merci pour vos précisions durant notre appel.&nbsp;</p>
+<p>Salut,</p>
 <p>&nbsp;</p>
-<p>Pour résumer le cadre de votre mission, vous allez donc&nbsp;:&nbsp;</p>
+<p>Bienvenue parmi nous ! Laura m’a dit de te briefer sur le design de la nouvelle version du site, alors voici les infos clés.</p>
+<p>&nbsp;</p>
+<p><strong>Design</strong></p>
+<p>Voici&nbsp;<a class="custom-link" href="https://www.figma.com/file/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?type=design&amp;node-id=0-1&amp;mode=design&amp;t=1KgUwWWFtuAVbsJ5-0" target="_blank" rel="noopener noreferrer">les maquettes sur Figma</a>&nbsp;pour le design d’interface. J’ai l’habitude de travailler avec la logique de composants sur Figma&nbsp;; Sandra m’a dit que ça te faciliterait le travail sur React. Tu trouveras toutes les ressources dont tu as besoin directement dans la maquette (logo, icônes pour les composants, etc.). Pour cela, il suffit de cliquer sur la ressource souhaitée et de faire "Exporter" au format voulu. Sur les vignettes des logements, pour les images de couverture, j'ai mis une rectangle orange que tu peux remplacer par l'image correspondante.</p>
+<p>&nbsp;</p>
+<p>Pour avoir un rendu le plus réaliste possible de l'application, utilise&nbsp;<a class="custom-link" href="https://www.figma.com/proto/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?type=design&amp;node-id=3-0&amp;t=x8RBKuR4UiE3hhBW-0&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=3%3A0&amp;show-proto-sidebar=1" target="_blank" rel="noopener noreferrer">les prototypes du site disponibles ici</a>. Ils te permettront notamment de voir les animations attendues sur les menus déroulants (Collapse).</p>
+<p>&nbsp;</p>
+<p><strong>Contraintes fonctionnelles</strong></p>
+<p>Quelques précisions sur les fonctionnalités du site :</p>
 <ul>
-<li>faire une optimisation globale du site, tant sur les performances que sur le SEO&nbsp;;</li>
-<li>mettre en place le référencement local en utilisant Schema.org&nbsp;;</li>
-<li>ajouter les metas pour les réseaux sociaux&nbsp;;</li>
-<li>faire les modifications liées à l’accessibilité du site&nbsp;;</li>
-<li>produire un rapport d’optimisation présentant toutes vos actions et leur impact.</li>
+<li>Pour le défilement des photos dans la galerie (composant Gallery)&nbsp;:
+<ul>
+<li>Si l'utilisateur se trouve à la première image et qu'il clique sur "Image précédente", la galerie affiche la dernière image.&nbsp;</li>
+<li>Inversement, quand l'image affichée est la dernière de la galerie, si l'utilisateur clique sur "Image suivante", la galerie affiche la première image.&nbsp;</li>
+<li>S'il n'y a qu'une seule image, les boutons "Suivant" et "Précédent" ainsi que la numérotation n'apparaissent pas.</li>
+</ul>
+</li>
+<li>La galerie doit toujours rester de la même hauteur, celle indiquée sur la maquette Figma. Les images seront donc coupées et centrées dans le cadre de l’image.</li>
+<li>Collapse : Par défaut, les Collapses sont fermés à l'initialisation de la page.&nbsp;</li>
+<li>Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer.
+<ul>
+<li>Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.</li>
+</ul>
+</li>
 </ul>
 <p>&nbsp;</p>
-<p>Comme convenu, voici les infos dont vous aurez besoin pour mon référencement local&nbsp;:</p>
-<ul>
-<li>Mon adresse : 68 avenue Alsace-Lorraine, 33200 Bordeaux.</li>
-<li>Mon numéro de téléphone : 05 56 67 78 89.</li>
-<li>Je réponds au téléphone du lundi au vendredi de 10&nbsp;h à 19&nbsp;h.</li>
-</ul>
+<p>Bon courage pour le développement, j’ai hâte de voir ce que ça va donner&nbsp;!</p>
 <p>&nbsp;</p>
-<p>Pour finir, j’aimerais vous demander un dernier travail. Comme vous avez certainement dû le constater, il y a des bugs dans le code, et j’aimerais que vous les corrigiez&nbsp;:&nbsp;</p>
-<ol>
-<li>La navigation dans la modale de la galerie entre images précédente et suivante ne fonctionne pas.&nbsp;</li>
-<li>Lorsque l’on change de filtre pour afficher les images, on ne voit pas quelle catégorie est sélectionnée. Normalement, la catégorie devrait avoir la couleur dorée en fond. Comme pour le filtre par défaut.&nbsp;&nbsp;</li>
-</ol>
-<p>&nbsp;</p>
-<p>Enfin, vous trouverez le code de mon site sur&nbsp;<a class="custom-link" href="https://github.com/OpenClassrooms-Student-Center/Nina-Carducci-Dev">ce repo GitHub</a>. Vous pouvez le cloner et modifier le code sur un nouveau repo à me partager quand il sera prêt.</p>
-<p>Merci beaucoup et bon développement,</p>
-<p>&nbsp;</p>
-<p><strong>Nina Carducci</strong></p>
+<p>Paul,</p>
+<p>Desginer</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-### Pièces rendues
+<aside>
+<p><strong>Utilisation de Sass et animations</strong>&nbsp;: les contraintes diffèrent selon votre parcours :</p>
+<ul>
+<li>Si vous êtes étudiant sur le parcours&nbsp;<strong>Développeur Web</strong>, vous devez obligatoirement utiliser Sass pour générer le style CSS du site web, ainsi que mettre en place l'animation CSS du menu déroulant.</li>
+<li>Si vous êtes étudiant sur le parcours&nbsp;<strong>Intégrateur Web</strong>, ceci n'est pas obligatoire puisque vous avez déjà été évalués sur un projet passé. Il est quand même recommandé de le faire afin de pratiquer sur ces compétences clés.</li>
+</ul>
+</aside>
 
-[Site de Nina Carducci Optimisé](https://bluskyart.github.io/OpenClassooms-Projet4/)
-
-[Rapport d'optimisation](https://github.com/user-attachments/files/17194933/Lescrohart_Guerwan_2_audit_lighthouse_092024.pdf)

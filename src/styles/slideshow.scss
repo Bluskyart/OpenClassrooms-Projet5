@@ -1,8 +1,9 @@
 .slide {
     position: relative;
     margin-bottom: 30px;
+}
 
-    .left-Arrow,
+.left-Arrow,
     .right-Arrow {
     position: absolute;
     top: 50%;
@@ -11,6 +12,7 @@
     }
 
     .left-Arrow {
+        width: 5px;
         left: 10px;
     }
 
@@ -31,9 +33,16 @@
         left: 50%;
         color: white;
     }
-}
 
 @media (max-width: 768px) {
+
+    #chevron_right {
+        width: 12px;
+    }
+
+    #chevron_left {
+        width: 12px;
+    }
 
     .slide_image {
         height: 225px;

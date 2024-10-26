@@ -9,7 +9,6 @@ function Collapse({title, content}) {
         setContentVisible(!contentVisible);
     };
 
-    // Ajoute une classe pour la rotation basée sur l'état
     const chevronRotation = contentVisible ? "rotate" : "";
 
     return (
